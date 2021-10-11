@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Username Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" type="module"></script>
+
+</head>
+<body>
+    <header>
+        <i class="fab fa-youtube"></i>
+        <h1>Programing Channel Name Generator</h1>
+    </header>    
+    <main>
+        <section class="submitSection">
+            <h2 id="formHeading" class="offScreen">Enter Your First name</h2>
+            <form id="submitForm" class="submitSection__form">
+                <input 
+                    type="text"
+                    id="submitSection__textInput"
+                    class="submitSection__textInput"
+                    required
+                    maxlength="20"
+                    placeholder="Enter Name/Username"
+                    aria-labelledby="formHeading">
+                <button class="submitSection__button" aria-label="Submit">
+                    <i class="fas fa-check"></i>
+                </button>
+            </form>
+        </section>
+
+        <section id="suggestionSection" class="suggestionSection hidden">
+            <h2>Suggestions:</h2>
+            <ol></ol>
+            <p>Click the name to see if it is already taken.</p>
+        </section>
+    </main>
+    <div class="index_footer">
+        <p>Made by <a href="https://twitter.com/helaportal" target="_blank">HelaPortal</a> on <i class="fab fa-twitter"></i></p>
+        <a href="mailto:contact@channelgenerator.elementfx.com"> Contact Me </a>
+    </div>
+</body>
+</html>
